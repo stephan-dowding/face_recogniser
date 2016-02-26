@@ -113,9 +113,9 @@ for image_path in image_paths:
 
 # capture frames from the camera
 for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=True):
-	# grab the raw NumPy array representing the image, then initialize the timestamp
-	# and occupied/unoccupied text
-	image = frame.array
+    # grab the raw NumPy array representing the image, then initialize the timestamp
+    # and occupied/unoccupied text
+    image = frame.array
 
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
